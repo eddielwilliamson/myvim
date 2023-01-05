@@ -19,10 +19,10 @@ let colors_name = "sorcerer"
 hi Normal       guifg=#c2c2b0 guibg=#202020 gui=NONE
 hi ColorColumn  guifg=NONE    guibg=#222222
 hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
-hi nCursor     guifg=black   guibg=green1     gui=NONE
-hi vCursor     guifg=black   guibg=magenta    gui=NONE
-hi iCursor     guifg=black   guibg=LightCoral gui=NONE
-hi cCursor     gui=reverse
+hi nCursor      guifg=black   guibg=green1     gui=NONE
+hi vCursor      guifg=black   guibg=magenta    gui=NONE
+hi iCursor      guifg=black   guibg=LightCoral gui=NONE
+hi cCursor      gui=reverse
 hi CursorColumn guibg=#2d2d2d
 hi CursorLine   guibg=#000000
 hi DiffAdd      guifg=#000000 guibg=#3cb371 gui=NONE
@@ -35,6 +35,10 @@ hi FoldColumn   guifg=#68838b guibg=#4B4B4B gui=bold
 hi Folded       guifg=#406060 guibg=#232c2c gui=NONE
 hi IncSearch    guifg=#ffffff guibg=#ff4500 gui=bold
 hi LineNr       guifg=#686858 guibg=#000000 gui=NONE
+
+" elw mod
+hi CursorLineNr guifg=#e0e080 guibg=#303030 gui=NONE cterm=NONE
+
 hi MatchParen   guifg=#fff000 guibg=#000000 gui=bold
 hi ModeMsg      guifg=#000000 guibg=#00ff00 gui=bold
 hi MoreMsg      guifg=#2e8b57 guibg=bg      gui=bold
