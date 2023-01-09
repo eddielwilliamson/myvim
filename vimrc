@@ -131,13 +131,13 @@ call plug#begin()
   Plug 'AlessandroYorba/Breve'
 
   " DarkColorSchemes:
-  Plug 'sainnhe/everforest'
-  Plug 'zacanger/angr.vim'
-  Plug 'drewtempelmeyer/palenight.vim'
+  Plug 'sainnhe/everforest' "has airline
+  Plug 'zacanger/angr.vim' "has airline
+  Plug 'drewtempelmeyer/palenight.vim' "has airline
   "   Manual: sorcer.vim downloaded into .vim/colors
-  Plug 'preservim/vim-colors-pencil' " Specific for markdown files
+  Plug 'preservim/vim-colors-pencil' " Specific for markdown files has airline
   "   Gruvbox colorscheme variations
-  Plug 'morhetz/gruvbox'
+  Plug 'morhetz/gruvbox' "has airline
   Plug 'sheldonldev/vim-gruvdark'
   Plug 'habamax/vim-gruvbit'
 
@@ -152,15 +152,15 @@ call plug#begin()
 
   "   COMPLETION: options, WIP
   Plug 'lifepillar/vim-mucomplete'
-  " Plug 'vim-scripts/AutoComplPop'
   " OmniSharp for c# completion
   " clang complete also.
   " Look into omnicomplete and omnifunc also.
-  "
-  " ? ALE ?   " Can this work with existing compilers as LSPs
-  "   Needs research
-  "
+  " C-n, C-p next, prev
+  " C-h, C-j try completion in different way (other in chain)
   " mucomplete -- youtube "Vim's built in completion" by Gavin Freeborn
+  "
+  " Plug 'vim-scripts/AutoComplPop'
+  " ? ALE ?   " Can this work with existing compilers as LSPs
   "   Needs research
 
   Plug 'lifepillar/vim-colortemplate' "needs study but might be good
