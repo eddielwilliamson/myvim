@@ -13,7 +13,7 @@ if v:progname == "gvim.exe"
   "colorscheme newspaper
 
 
-  
+
   " LIGHT: colorschemes
 
 elseif s:elwscheme == 11
@@ -34,7 +34,7 @@ elseif s:elwscheme == 14
   colorscheme gruvbox
 
 
-  
+
   " DARK: colorschemes
 
   " PROBABLY DELETE
@@ -57,6 +57,7 @@ elseif s:elwscheme == 25
 elseif s:elwscheme == 26
   set background=dark
   colorscheme gruvdark
+  let g:airline_theme = 'molokai'
 
 elseif s:elwscheme == 27
   set background=dark
@@ -65,12 +66,14 @@ elseif s:elwscheme == 27
 elseif s:elwscheme == 28
   set background=dark
   colorscheme sorcerer
+  let g:airline_theme = 'molokai'
 
 elseif s:elwscheme == 29
   set background=dark
   let g:gruvbox_contrast_dark  = 'hard'
   let g:gruvbox_contrast_light = 'soft'
   colorscheme gruvbox
+  let g:airline_theme = 'molokai'
 
 
 

@@ -6,7 +6,7 @@
 
 
 " Grab the defaults and then override if I want to
-source $VIMRUNTIME/defaults.vim 
+source $VIMRUNTIME/defaults.vim
 
 syntax on
 
@@ -74,7 +74,7 @@ if has('mouse')
 endif
 
 if has('termguicolors')
-	set termguicolors
+  set termguicolors
 endif
 
 " If running gui vs from git bash then set font
@@ -100,7 +100,7 @@ au User AirlineAfterInit :let g:airline_section_z = airline#section#create(['L:%
 "= map <Leader>i :nohls<CR>
 "= " EXPERIMENTAL
 "= map <Leader>* I* [ ] a<Esc>
-"= 
+"=
 "= inoremap <expr> <Down>  pumvisible() ? "<C-n>" : "<Down>"
 "= inoremap <expr> <Up>    pumvisible() ? "<C-p>" : "<Up>"
 "= inoremap <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
@@ -142,13 +142,14 @@ call plug#begin()
   Plug 'habamax/vim-gruvbit'
 
  " Extentions:
-  Plug 'vim-airline/vim-airline'  " Need better config
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   "Plug 'itchyny/lightline.vim'
   Plug 'preservim/nerdtree'
   Plug 'andymass/vim-matchup'
   " Plug 'vim-scripts/snipMate'
   " Plug 'honza/vim-snippets'
-  
+
   "   COMPLETION: options, WIP
   Plug 'lifepillar/vim-mucomplete'
   " Plug 'vim-scripts/AutoComplPop'
