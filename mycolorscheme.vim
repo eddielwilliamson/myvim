@@ -1,6 +1,7 @@
 
-" Select scheme here, options below
-let s:elwscheme = 26
+" SelectScheme: options below
+let s:elwscheme = 22
+
 
 if v:progname == "gvim.exe"
   " NOTES:
@@ -10,12 +11,10 @@ if v:progname == "gvim.exe"
   set background=dark
   let g:everforest_background = 'hard'
   colorscheme everforest
-  "colorscheme newspaper
 
 
 
-  " LIGHT: colorschemes
-
+  " LightColorschemes:
 elseif s:elwscheme == 11
   set background=light
   colorscheme newspaper
@@ -30,51 +29,46 @@ elseif s:elwscheme == 13
 
 elseif s:elwscheme == 14
   set background=light
+  let g:gruvbox_contrast_dark  = 'hard'
   let g:gruvbox_contrast_light = 'soft'
   colorscheme gruvbox
 
 
 
-  " DARK: colorschemes
-
-  " PROBABLY DELETE
+  " DarkColorschemes:
+  " POSSIBLY DELETE
 elseif s:elwscheme == 21
   set background=dark
   " set background 'hard', 'medium'(default), or 'soft'
   let g:everforest_background = 'hard'
   colorscheme everforest
 
-  " PROBABLY DELETE
 elseif s:elwscheme == 22
-  set background=dark
-  colorscheme nord
-
-  " PROBABLY DELETE
-elseif s:elwscheme == 25
-  set background=dark
-  colorscheme onehalfdark
-
-elseif s:elwscheme == 26
   set background=dark
   colorscheme gruvdark
   let g:airline_theme = 'molokai'
 
-elseif s:elwscheme == 27
+elseif s:elwscheme == 23
   set background=dark
   colorscheme gruvbit
 
-elseif s:elwscheme == 28
+elseif s:elwscheme == 24
   set background=dark
   colorscheme sorcerer
   let g:airline_theme = 'molokai'
 
-elseif s:elwscheme == 29
+elseif s:elwscheme == 25
   set background=dark
   let g:gruvbox_contrast_dark  = 'hard'
   let g:gruvbox_contrast_light = 'soft'
   colorscheme gruvbox
   let g:airline_theme = 'molokai'
 
+elseif s:elwscheme == 26
+  " EXPERIMENTAL
+  set background=dark
+  colorscheme palenight
+  let g:airline_theme = 'molokai'
 
 
 else
