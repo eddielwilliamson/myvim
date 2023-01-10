@@ -111,12 +111,16 @@ au User AirlineAfterInit :let g:airline_section_z = airline#section#create(['L:%
 source ~/.vim/mappings.vim
 
 
+
+"----------------------------------------------------------------------------
 " For identifying word type for syntax highlight changes
+"----------------------------------------------------------------------------
 fun! SynGroup()
     let l:s = synID(line('.'), col('.'), 1)
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
 map <Leader>s :call SynGroup()<CR>
+
 
 
 "----------------------------------------------------------------------------------------
@@ -131,15 +135,16 @@ call plug#begin()
   Plug 'AlessandroYorba/Breve'
 
   " DarkColorSchemes:
-  Plug 'sainnhe/everforest' "has airline
-  Plug 'zacanger/angr.vim' "has airline
-  Plug 'drewtempelmeyer/palenight.vim' "has airline
-  "   Manual: sorcer.vim downloaded into .vim/colors
+  Plug 'sainnhe/everforest' "has airline ?
+  Plug 'zacanger/angr.vim' "has airline ?
+  Plug 'drewtempelmeyer/palenight.vim' "has airline ?
+  "   ManuaL -- sorcer.vim downloaded into .vim/colors
   Plug 'preservim/vim-colors-pencil' " Specific for markdown files has airline
   "   Gruvbox colorscheme variations
-  Plug 'morhetz/gruvbox' "has airline
+  Plug 'morhetz/gruvbox' "has airline ?
   Plug 'sheldonldev/vim-gruvdark'
   Plug 'habamax/vim-gruvbit'
+
 
  " Extentions:
   Plug 'vim-airline/vim-airline'
