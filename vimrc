@@ -30,7 +30,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set hlsearch
-set colorcolumn=90
+" set colorcolumn=90  Now <Leader>cc and ncc turns on/off
 " Sensible default if colorscheme doesn't set this
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 set ruler
@@ -169,6 +169,9 @@ call plug#begin()
   "   Needs research
 
   Plug 'lifepillar/vim-colortemplate' "needs study but might be good
+
+  " Investigate "which key" to show key mappings. Alternative?
+
 call plug#end()
 
 

@@ -5,6 +5,11 @@ let mapleader = " "
 " Turn off highlight
 map <Leader>i :nohls<CR>
 
+" Turn colorcolumn on/off
+nnoremap <Leader>cc   :set colorcolumn=90<cr>
+nnoremap <Leader>ncc  :set colorcolumn-=90<cr>
+
+
 inoremap <expr> <Down>  pumvisible() ? "<C-n>" : "<Down>"
 inoremap <expr> <Up>    pumvisible() ? "<C-p>" : "<Up>"
 inoremap <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
