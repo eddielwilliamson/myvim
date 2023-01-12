@@ -8,7 +8,7 @@
 " Grab the defaults and then override if I want to
 source $VIMRUNTIME/defaults.vim
 
-syntax on
+syntax enable
 
 
 set noerrorbells
@@ -44,10 +44,14 @@ set scrolloff=1
 set complete+=kspell
 set spell spelllang=en_us   " Setup spelling but then turn off.
 set nospell                 " Completion now works on spelling also
-set completeopt=menuone,longest,noinsert,popup
+set completeopt=menuone,longest,noinsert,popup,preview
 let g:mucomplete#enable_auto_at_startup = 1
 let g:mucomplete#completion_delay = 1
 set shortmess+=c
+
+filetype indent plugin on
+
+
 set clipboard=unnamed
 set nowrapscan
 
@@ -156,7 +160,7 @@ call plug#begin()
   " Plug 'honza/vim-snippets'
 
   "   COMPLETION: options, WIP
-  Plug 'lifepillar/vim-mucomplete'
+  "Plug 'lifepillar/vim-mucomplete'
   " OmniSharp for c# completion
   " clang complete also.
   " Look into omnicomplete and omnifunc also.
@@ -166,7 +170,10 @@ call plug#begin()
   "
   " Plug 'vim-scripts/AutoComplPop'
   " ? ALE ?   " Can this work with existing compilers as LSPs
+  Plug 'dense-analysis/ale'
   "   Needs research
+
+  Plug 'OmniSharp/omnisharp-vim'
 
   Plug 'lifepillar/vim-colortemplate' "needs study but might be good
 
